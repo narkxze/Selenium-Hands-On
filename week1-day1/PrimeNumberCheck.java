@@ -13,7 +13,7 @@ public class PrimeNumberCheck {
 				break; // Iterator break
 			}
 		}
-		if (isPrime) { // flag check
+		if (!isPrime) { // flag check
 			System.out.println(num + " is a Prime Number");
 		} else {
 			System.out.println(num + " is not a prime Number");
