@@ -66,6 +66,9 @@ public class CreateLead {
 		driver.findElement(By.id("createLeadForm_generalPostalCodeExt")).sendKeys("14");
 		
 		driver.findElement(By.name("submitButton")).click();
+		String firstName= driver.findElement(By.id("viewLead_firstName_sp")).getText();
+		System.out.println("First name: "+firstName);
+		
 		System.out.println(driver.getTitle());
 		
 	}
