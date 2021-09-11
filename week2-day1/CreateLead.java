@@ -37,7 +37,7 @@ public class CreateLead {
 		driver.findElement(By.id("createLeadForm_firstNameLocal")).sendKeys("Naresh");
 		driver.findElement(By.id("createLeadForm_lastNameLocal")).sendKeys("Karthi");
 		driver.findElement(By.id("createLeadForm_personalTitle")).sendKeys("Mr.");
-		driver.findElement(By.id("createLeadForm_birthDate")).sendKeys("19/08/1999");
+		driver.findElement(By.id("createLeadForm_birthDate")).sendKeys("08/08/99");
 		driver.findElement(By.id("createLeadForm_generalProfTitle")).sendKeys("Engineer");
 		driver.findElement(By.id("createLeadForm_departmentName")).sendKeys("Automation Testing");
 		driver.findElement(By.id("createLeadForm_annualRevenue")).sendKeys("4LPA");
@@ -60,12 +60,14 @@ public class CreateLead {
 		driver.findElement(By.id("createLeadForm_generalAttnName")).sendKeys("NK");
 		driver.findElement(By.id("createLeadForm_generalAddress1")).sendKeys("1,Eldams Road");
 		driver.findElement(By.id("createLeadForm_generalAddress2")).sendKeys("Teynampet");
+		driver.findElement(By.id("createLeadForm_generalStateProvinceGeoId")).sendKeys("Florida");
 		driver.findElement(By.id("createLeadForm_generalCity")).sendKeys("Chennai");
 		driver.findElement(By.id("createLeadForm_generalPostalCode")).sendKeys("600010");
 		driver.findElement(By.id("createLeadForm_generalPostalCodeExt")).sendKeys("14");
 		
 		driver.findElement(By.name("submitButton")).click();
-		driver.close();
+		System.out.println(driver.getTitle());
+		
 	}
 
 }
