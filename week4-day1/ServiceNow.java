@@ -20,11 +20,11 @@ public class ServiceNow {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		//Web-Page Link
-		driver.get("https://dev82719.service-now.com/navpage.do");
+		driver.get("https://dev85707.service-now.com/navpage.do");
 		//Access switch to Frame
 		driver.switchTo().frame("gsft_main");
 		driver.findElement(By.id("user_name")).sendKeys("admin");
-		driver.findElement(By.id("user_password")).sendKeys("cI4THn0VezFv");
+		driver.findElement(By.id("user_password")).sendKeys("H1hskMU8OmaO");
 		driver.findElement(By.id("sysverb_login")).click();
 		driver.findElement(By.id("filter")).sendKeys("Incident"+Keys.ENTER);
 		driver.findElement(By.xpath("(//div[text()='Create New'])[1]")).click();
@@ -71,5 +71,8 @@ public class ServiceNow {
 		} else {
 			System.out.println("Error in Incident Creation");
 		}
+		driver.switchTo().window(parentWindow);
+		driver.switchTo().frame("gsft_main");
+		driver.findElement(By.id("incident.description")).sendKeys("OK");
 	}
 }
