@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="Language" value="english"/>
+  <test thread-count="5" name="English Version(failed)">
+    <classes>
+      <class name="testcases.DuplicateLeadCase">
+        <methods>
+          <include name="setFileName"/>
+          <include name="preCondition"/>
+          <include name="runDuplicateLead"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- testcases.DuplicateLeadCase -->
+    </classes>
+  </test> <!-- English Version(failed) -->
+</suite> <!-- Failed suite [Suite] -->

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="ConfigureChatQueue(failed)">
+    <classes>
+      <class name="testcases.ConfigureChatQueue">
+        <methods>
+          <include name="tearDown"/>
+          <include name="preCondition"/>
+          <include name="setFileName"/>
+          <include name="runConfigureChat"/>
+        </methods>
+      </class> <!-- testcases.ConfigureChatQueue -->
+    </classes>
+  </test> <!-- ConfigureChatQueue(failed) -->
+  <test thread-count="5" parallel="tests" name="UpdateChatQueue(failed)">
+    <classes>
+      <class name="testcases.UpdateChatQueue">
+        <methods>
+          <include name="tearDown"/>
+          <include name="preCondition"/>
+          <include name="runUpdateChat"/>
+          <include name="setFileName"/>
+        </methods>
+      </class> <!-- testcases.UpdateChatQueue -->
+    </classes>
+  </test> <!-- UpdateChatQueue(failed) -->
+  <test thread-count="5" parallel="tests" name="CreateChatQueue(failed)">
+    <classes>
+      <class name="testcases.CreateChatQueue">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setFileName"/>
+          <include name="preCondition"/>
+          <include name="runCreateChat"/>
+        </methods>
+      </class> <!-- testcases.CreateChatQueue -->
+    </classes>
+  </test> <!-- CreateChatQueue(failed) -->
+  <test thread-count="5" parallel="tests" name="DeleteChatQueue(failed)">
+    <classes>
+      <class name="testcases.DeleteChatQueue">
+        <methods>
+          <include name="tearDown"/>
+          <include name="preCondition"/>
+          <include name="runDeleteChat"/>
+        </methods>
+      </class> <!-- testcases.DeleteChatQueue -->
+    </classes>
+  </test> <!-- DeleteChatQueue(failed) -->
+</suite> <!-- Failed suite [Suite] -->

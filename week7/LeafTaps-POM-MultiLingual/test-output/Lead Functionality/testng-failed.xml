@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Lead Functionality]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="English(failed)">
+    <parameter name="Language" value="english"/>
+    <classes>
+      <class name="testcases.MergeLeadcase">
+        <methods>
+          <include name="preCondition"/>
+          <include name="tearDown"/>
+          <include name="runMergeLead" invocation-numbers="0"/>
+          <include name="setFileName"/>
+        </methods>
+      </class> <!-- testcases.MergeLeadcase -->
+    </classes>
+  </test> <!-- English(failed) -->
+</suite> <!-- Failed suite [Lead Functionality] -->

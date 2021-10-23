@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" thread-count="5" >
+	<test thread-count="5" name="CreateChatQueue" verbose="5">
+		<classes>
+			<class name="testcases.CreateChatQueue" />
+		</classes>
+	</test>
+	<test thread-count="5" name="UpdateChatQueue" verbose="5">
+		<classes>
+			<class name="testcases.UpdateChatQueue" />
+		</classes>
+	</test>
+	<test thread-count="5" name="ConfigureChatQueue" verbose="5">
+		<classes>
+			<class name="testcases.ConfigureChatQueue" />
+		</classes>
+	</test>
+	<test thread-count="5" name="DeleteChatQueue" verbose="5">
+		<classes>
+			<class name="testcases.DeleteChatQueue" />
+		</classes>
+	</test>
+</suite> <!-- Suite -->
